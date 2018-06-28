@@ -1,0 +1,14 @@
+$ sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky
+#resart PC
+reboot
+$ sudo dnf install vim
+$ sudo dnf install fedora-workstation-repositories
+dnf config-manager --set-enabled google-chrome
+
+dnf install google-chrome-stable
+    curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+
+
+
+#VIM
+git clone https://github.com/amix/vimrc.git
