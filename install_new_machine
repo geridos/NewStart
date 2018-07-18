@@ -1,14 +1,26 @@
-$ sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky
+sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky
 #resart PC
-reboot
-$ sudo dnf install vim
-$ sudo dnf install fedora-workstation-repositories
+sudo dnf install vim
+sudo dnf install fedora-workstation-repositories
 dnf config-manager --set-enabled google-chrome
 
 dnf install google-chrome-stable
-    curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
-
-
 
 #VIM
 git clone https://github.com/amix/vimrc.git
+
+#keyborad
+setxkbmap -layout us -variant intl
+# User specific aliases and functions
+
+#screens
+xrandr --output DP-2 --rotate normal
+xrandr --output DP-1 --rotate left
+xrandr --output DP-2 --left-of DP-1
+
+# git alias
+alias gitl="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+
+
+
+#insall vimium for chrom
